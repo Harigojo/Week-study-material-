@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination System</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef5ff;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        p {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin: 6px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 25px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: darkblue;
+        }
+
+        input[type="reset"] {
+            background-color: gray;
+        }
+
+        input[type="submit"]:hover {
+            background-color: green;
+        }
+
+        input[type="reset"]:hover {
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        function finishExam() {
+            alert("Exam submitted successfully!");
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h2>Online Examination System</h2>
+
+<form action="ExamServlet" method="post" onsubmit="finishExam()">
+
+    <p>1. Which HTML tag is used to create a paragraph?</p>
+    <input type="radio" name="q1" value="p"> &lt;p&gt;<br>
+    <input type="radio" name="q1" value="h1"> &lt;h1&gt;<br>
+    <input type="radio" name="q1" value="br"> &lt;br&gt;<br>
+    <input type="radio" name="q1" value="table"> &lt;table&gt;<br>
+
+    <p>2. Which CSS property is used to change the text color?</p>
+    <input type="radio" name="q2" value="font"> font<br>
+    <input type="radio" name="q2" value="color"> color<br>
+    <input type="radio" name="q2" value="text"> text<br>
+    <input type="radio" name="q2" value="background"> background<br>
+
+    <p>3. Which language is used to add behavior to a webpage?</p>
+    <input type="radio" name="q3" value="HTML"> HTML<br>
+    <input type="radio" name="q3" value="CSS"> CSS<br>
+    <input type="radio" name="q3" value="JavaScript"> JavaScript<br>
+    <input type="radio" name="q3" value="SQL"> SQL<br>
+
+    <p>4. Which tag is used to create a hyperlink?</p>
+    <input type="radio" name="q4" value="link"> &lt;link&gt;<br>
+    <input type="radio" name="q4" value="a"> &lt;a&gt;<br>
+    <input type="radio" name="q4" value="href"> &lt;href&gt;<br>
+    <input type="radio" name="q4" value="url"> &lt;url&gt;<br>
+
+    <p>5. Which property changes the background color?</p>
+    <input type="radio" name="q5" value="color"> color<br>
+    <input type="radio" name="q5" value="background-color"> background-color<br>
+    <input type="radio" name="q5" value="text-color"> text-color<br>
+    <input type="radio" name="q5" value="bg-color"> bg-color<br>
+
+   <p>6. Which of the following method is used to perform DML statements in JDBC?</p>
+    <input type="radio" name="q6" value="executeResult()"> executeResult()<br>
+    <input type="radio" name="q6" value="executeQuery()">executeQuery() <br>
+    <input type="radio" name="q6" value="executeUpdate()"> executeUpdate()<br>
+    <input type="radio" name="q6" value="execute()"> execute()<br>
+
+   <p>7.Paramized queries can be executed by ___________ . </p>
+    <input type="radio" name="q7" value="ParameterizedStatement"> ParameterizedStatement<br>
+    <input type="radio" name="q7" value="PreparedStatement">PreparedStatement <br>
+    <input type="radio" name="q7" value="CallableStatement"> CallableStatement<br>
+    <input type="radio" name="q7" value="CreateStatement"> CreateStatement<br>
+    
+    
+
+  
+    <div class="buttons">
+        <input type="submit" value="Submit Exam">
+        <input type="reset" value="Clear">
+    </div>
+
+</form>
+
+</body>
+</html>
